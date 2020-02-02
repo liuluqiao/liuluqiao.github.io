@@ -69,16 +69,14 @@ function activateLightMode(){
   Snackbar: undefined
   
 }</script></head><body><div id="header"> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Yggdrasill</a></span><i class="fa fa-bars fa-fw toggle-menu pull_right close" aria-hidden="true"></i><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div></div></span><span class="pull_right" id="search_button"></span></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="lazyload avatar_img" src="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'"></div><div class="mobile_post_data"><div class="mobile_data_item is_center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">4</div></a></div></div><div class="mobile_data_item is_center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">2</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#成员测试"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">成员测试</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#set可以进行集合运算"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">set可以进行集合运算</span></a></li></ol></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#成员测试"><span class="toc-number">1.</span> <span class="toc-text">成员测试</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#set可以进行集合运算"><span class="toc-number">2.</span> <span class="toc-text">set可以进行集合运算</span></a></li></ol></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png)"><div id="post-info"><div id="post-title"><div class="posttitle">python基本数据类型</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2020-01-16<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> 更新于 2020-02-02</time><div class="post-meta-wordcount"></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><hr>
-<p>title: Python基本数据类型<br>date: 2020-01-16 13:34:31<br>tags:<br>categories: code<br>Python 中的变量不需要声明。每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。<br>在 Python 中，变量就是变量，它没有类型，我们所说的”类型”是变量所指的内存中对象的类型。<br>等号（=）用来给变量赋值。<br>等号（=）运算符左边是一个变量名,等号（=）运算符右边是存储在变量中的值。</p>
+<p>title: Python基本数据类型<br>date: 2020-01-16 13:34:31<br>tags:<br>categories: code<br>Python 中的变量不需要声明。每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。<br>在 Python 中，变量就是变量，它没有类型，我们所说的”类型”是变量所指的内存中对象的类型。<br>等号（=）用来给变量赋值。<br>等号（=）运算符左边是一个变量名,等号（=）运算符右边是存储在变量中的值。<br>例如：</p>
 <blockquote>
 <blockquote>
 <blockquote>
-<p>例如：<br>  #!/usr/bin/python3</p>
+<p>#!/usr/bin/python3<br>  counter = 100          # 整型变量<br>  miles   = 1000.0       # 浮点型变量<br>  name    = “runoob”     # 字符串<br>  print (counter)<br>  print (miles)<br>  print (name)</p>
 </blockquote>
 </blockquote>
 </blockquote>
-<p>  counter = 100          # 整型变量<br>  miles   = 1000.0       # 浮点型变量<br>  name    = “runoob”     # 字符串</p>
-<p>  print (counter)<br>  print (miles)<br>  print (name)</p>
 <p> 结果如下：</p>
 <blockquote>
 <blockquote>
@@ -87,24 +85,22 @@ function activateLightMode(){
 </blockquote>
 </blockquote>
 </blockquote>
-<p> 多个变量赋值：<br>Python允许你同时为多个变量赋值。</p>
+<p> 多个变量赋值：<br>Python允许你同时为多个变量赋值。<br>如：</p>
 <blockquote>
 <blockquote>
 <blockquote>
-<p>如：</p>
+<p>a= b = c = 1</p>
 </blockquote>
 </blockquote>
 </blockquote>
-<p>   a= b = c = 1</p>
-<p> 多个对象指定多个变量：</p>
+<p> 多个对象指定多个变量：<br>例如：</p>
 <blockquote>
 <blockquote>
 <blockquote>
-<p>例如：</p>
+<p>a, b, c = 1, 2, “runoob”</p>
 </blockquote>
 </blockquote>
 </blockquote>
-<p>   a, b, c = 1, 2, “runoob”</p>
 <p>标准数据类型</p>
 <p>Python3中有六个标准的数据类型：<br>  ·Number（数字）</p>
 <p>  ·String（字符串）</p>
@@ -116,7 +112,7 @@ function activateLightMode(){
 <blockquote>
 <blockquote>
 <blockquote>
-<p>  ·不可变数据（3 个）：Number（数字）、String（字符串）、Tuple（元组）；<br>  ·可变数据（3 个）：List（列表）、Dictionary（字典）、Set（集合）</p>
+<p>·不可变数据（3 个）：Number（数字）、String（字符串）、Tuple（元组）；<br>   ·可变数据（3 个）：List（列表）、Dictionary（字典）、Set（集合）</p>
 </blockquote>
 </blockquote>
 </blockquote>
@@ -129,11 +125,11 @@ function activateLightMode(){
 </blockquote>
 </blockquote>
 </blockquote>
-<p>还可以用isinstance来判断：</p>
+<p>还可以用isinstance来判断：<br>实例：</p>
 <blockquote>
 <blockquote>
 <blockquote>
-<p>实例：<br>a = 111<br>isinstance(a, int)<br>   True</p>
+<p>a = 111<br>isinstance(a, int)<br>   True</p>
 </blockquote>
 </blockquote>
 </blockquote>
@@ -141,14 +137,7 @@ function activateLightMode(){
 <blockquote>
 <blockquote>
 <blockquote>
-</blockquote>
-<p>  ·type()不会认为子类是一种父类类型。<br>  ·isinstance()会认为子类是一种父类类型。</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>class A:<br>   …     pass<br>   …<br>class B(A):<br>   …     pass<br>   …<br>isinstance(A(), A)<br>   True<br>type(A()) == A<br>   True<br>isinstance(B(), A)<br>   True<br>type(B()) == A<br>   False</p>
+<p>·type()不会认为子类是一种父类类型。<br>   ·isinstance()会认为子类是一种父类类型。<br>class A:<br>   …     pass<br>   …<br>class B(A):<br>   …     pass<br>   …<br>isinstance(A(), A)<br>   True<br>type(A()) == A<br>   True<br>isinstance(B(), A)<br>   True<br>type(B()) == A<br>   False</p>
 </blockquote>
 </blockquote>
 </blockquote>
@@ -157,31 +146,31 @@ function activateLightMode(){
 <blockquote>
 <blockquote>
 <blockquote>
+<p>var1 = 1<br>   var2 = 10</p>
 </blockquote>
-<p>   var1 = 1<br>   var2 = 10</p>
 </blockquote>
 </blockquote>
 <p>del语句删除一些对象引用。<br>del语句：</p>
 <blockquote>
 <blockquote>
 <blockquote>
+<p>del var1[,var2[,var3[….,varN]]]</p>
 </blockquote>
-<p>   del var1[,var2[,var3[….,varN]]]</p>
 </blockquote>
 </blockquote>
 <p>可以通过del语句删除单个或者多个对象。<br>例：</p>
 <blockquote>
 <blockquote>
 <blockquote>
+<p>del var<br>   del var_a, var_b</p>
 </blockquote>
-<p>   del var<br>   del var_a, var_b</p>
 </blockquote>
 </blockquote>
-<p>数值运算</p>
+<p>数值运算<br>实例：</p>
 <blockquote>
 <blockquote>
 <blockquote>
-<p>实例：<br>5 + 4  # 加法<br>   9<br>4.3 - 2 # 减法<br>   2.3<br>3 * 7  # 乘法<br>   21<br>2 / 4  # 除法，得到一个浮点数<br>   0.5<br>2 // 4 # 除法，得到一个整数<br>   0<br>17 % 3 # 取余<br>   2<br>2 ** 5 # 乘方<br>   32</p>
+<p>5 + 4  # 加法<br>   9<br>4.3 - 2 # 减法<br>   2.3<br>3 * 7  # 乘法<br>   21<br>2 / 4  # 除法，得到一个浮点数<br>   0.5<br>2 // 4 # 除法，得到一个整数<br>   0<br>17 % 3 # 取余<br>   2<br>2 ** 5 # 乘方<br>   32</p>
 </blockquote>
 </blockquote>
 </blockquote>
@@ -194,37 +183,28 @@ function activateLightMode(){
 <blockquote>
 <blockquote>
 <blockquote>
+<p>变量[头下标:尾下标]</p>
 </blockquote>
-<p>   变量[头下标:尾下标]</p>
 </blockquote>
 </blockquote>
 <p>索引值以0为开始值，-1为从末尾的开始位置。<br>从后面索引：     -6 -5 -4 -3 -2 -1<br>从前面索引：      0  1  2  3  4  5<br>                 +–+–+–+–+–+–+<br>                 | a| b| c| d| e| f|<br>                 +–+–+–+–+–+–+<br>从前面截取：     ： 1  2  3  4  5  ：<br>从后面截取：     ：-5 -4 -3 -2 -1  :</p>
-<p>加号 + 是字符串的连接符， 星号 * 表示复制当前字符串，紧跟的数字为复制的次数。</p>
+<p>加号 + 是字符串的连接符， 星号 * 表示复制当前字符串，紧跟的数字为复制的次数。<br>实例：</p>
 <blockquote>
 <blockquote>
 <blockquote>
-<p>实例：<br>   #!/usr/bin/python3</p>
+<p>#!/usr/bin/python3<br>   str = ‘Runoob’<br>   print (str)          # 输出字符串<br>   print (str[0:-1])    # 输出第一个到倒数第二个的所有字符<br>   print (str[0])       # 输出字符串第一个字符<br>   print (str[2:5])     # 输出从第三个开始到第五个的字符<br>   print (str[2:])      # 输出从第三个开始的后的所有字符<br>   print (str * 2)      # 输出字符串两次<br>   print (str + “TEST”) # 连接字符串</p>
 </blockquote>
 </blockquote>
 </blockquote>
-<p>   str = ‘Runoob’</p>
-<p>   print (str)          # 输出字符串<br>   print (str[0:-1])    # 输出第一个到倒数第二个的所有字符<br>   print (str[0])       # 输出字符串第一个字符<br>   print (str[2:5])     # 输出从第三个开始到第五个的字符<br>   print (str[2:])      # 输出从第三个开始的后的所有字符<br>   print (str * 2)      # 输出字符串两次<br>   print (str + “TEST”) # 连接字符串</p>
 <p>结果如下：</p>
 <blockquote>
 <blockquote>
 <blockquote>
-</blockquote>
-<p>   Runoob<br>   Runoo<br>   R<br>   noo<br>   noob<br>   RunoobRunoob<br>   RunoobTEST</p>
-</blockquote>
-</blockquote>
-<p>Python 使用反斜杠()转义特殊字符，如果你不想让反斜杠发生转义，可以在字符串前面添加一个 r，表示原始字符串：<br>注意，Python 没有单独的字符类型，一个字符就是长度为1的字符串。</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>实例：</p>
+<p>Runoob<br>   Runoo<br>   R<br>   noo<br>   noob<br>   RunoobRunoob<br>   RunoobTEST</p>
 </blockquote>
 </blockquote>
 </blockquote>
+<p>Python 使用反斜杠()转义特殊字符，如果你不想让反斜杠发生转义，可以在字符串前面添加一个 r，表示原始字符串：<br>注意，Python 没有单独的字符类型，一个字符就是长度为1的字符串。<br>实例：</p>
 <blockquote>
 <blockquote>
 <blockquote>
@@ -255,8 +235,7 @@ function activateLightMode(){
 <blockquote>
 <blockquote>
 <blockquote>
-</blockquote>
-<pre><code>      Python列表截取
+<pre><code>  Python列表截取
  t = [&apos;a&apos;,&apos;b&apos;,&apos;c&apos;,&apos;d&apos;,&apos;e&apos;]
        |   |   |   |   |
        |   |   |   |   |
@@ -264,11 +243,12 @@ function activateLightMode(){
 索引   0   1   2   3   4
 索引  -5  -4  -3  -2  -1</code></pre></blockquote>
 </blockquote>
-<p>加号+是列表连接运算符，星号*重复操作。</p>
+</blockquote>
+<p>加号+是列表连接运算符，星号*重复操作。<br>例：</p>
 <blockquote>
 <blockquote>
 <blockquote>
-<p>例：<br>#!/usr/bin/python3<br>list = [ ‘abcd’, 786 , 2.23, ‘runoob’, 70.2 ]<br>tinylist = [123, ‘runoob’]</p>
+<p>#!/usr/bin/python3<br>list = [ ‘abcd’, 786 , 2.23, ‘runoob’, 70.2 ]<br>tinylist = [123, ‘runoob’]</p>
 </blockquote>
 </blockquote>
 </blockquote>
@@ -288,11 +268,11 @@ function activateLightMode(){
 <pre><code>                0   1   2   3   4   5   6
 &gt;&gt;&gt; letters = [&apos;c&apos;,&apos;h&apos;,&apos;e&apos;,&apos;c&apos;,&apos;k&apos;,&apos;i&apos;,&apos;o&apos;]
 &gt;&gt;&gt; letters[1:4:2]
-[&apos;h&apos;,&apos;c&apos;]</code></pre><p>如果第三个参数为负数表示逆向读取，以下实例用于翻转字符串：</p>
+[&apos;h&apos;,&apos;c&apos;]</code></pre><p>如果第三个参数为负数表示逆向读取，以下实例用于翻转字符串：<br>实例：</p>
 <blockquote>
 <blockquote>
 <blockquote>
-<p>实例：<br>def reverseWords(input):<br>    # 通过空格将字符串分隔符，把各个单词分隔为列表<br>    inputWords = input.split(“ “)<br>    # 翻转字符串<br>    # 假设列表 list = [1,2,3,4],<br>    # list[0]=1, list[1]=2 ，而 -1 表示最后一个元素 list[-1]=4 ( 与 list[3]=4 一样)<br>    # inputWords[-1::-1] 有三个参数<br>    # 第一个参数 -1 表示最后一个元素<br>    # 第二个参数为空，表示移动到列表末尾<br>    # 第三个参数为步长，-1 表示逆向<br>    inputWords=inputWords[-1::-1]<br>    # 重新组合字符串<br>    output = ‘ ‘.join(inputWords)<br>     return output<br>if <strong>name</strong> == “<strong>main</strong>“:<br>    input = ‘I like runoob’<br>    rw = reverseWords(input)<br>    print(rw)</p>
+<p>def reverseWords(input):<br>    # 通过空格将字符串分隔符，把各个单词分隔为列表<br>    inputWords = input.split(“ “)<br>    # 翻转字符串<br>    # 假设列表 list = [1,2,3,4],<br>    # list[0]=1, list[1]=2 ，而 -1 表示最后一个元素 list[-1]=4 ( 与 list[3]=4 一样)<br>    # inputWords[-1::-1] 有三个参数<br>    # 第一个参数 -1 表示最后一个元素<br>    # 第二个参数为空，表示移动到列表末尾<br>    # 第三个参数为步长，-1 表示逆向<br>    inputWords=inputWords[-1::-1]<br>    # 重新组合字符串<br>    output = ‘ ‘.join(inputWords)<br>     return output<br>if <strong>name</strong> == “<strong>main</strong>“:<br>    input = ‘I like runoob’<br>    rw = reverseWords(input)<br>    print(rw)</p>
 </blockquote>
 </blockquote>
 </blockquote>
@@ -313,11 +293,11 @@ function activateLightMode(){
 </blockquote>
 </blockquote>
 </blockquote>
-<p>元组与字符串类似，可以被索引且下标索引从0开始，-1 为从末尾开始的位置。也可以进行截取（看上面，这里不再赘述）。<br>其实，可以把字符串看作一种特殊的元组。</p>
+<p>元组与字符串类似，可以被索引且下标索引从0开始，-1 为从末尾开始的位置。也可以进行截取（看上面，这里不再赘述）。<br>其实，可以把字符串看作一种特殊的元组。<br>实例：</p>
 <blockquote>
 <blockquote>
 <blockquote>
-<p>实例：<br>tup = (1, 2, 3, 4, 5, 6)<br>print(tup[0])<br> 1<br>print(tup[1:5])<br> (2, 3, 4, 5)<br>tup[0] = 11  # 修改元组元素的操作是非法的<br> Traceback (most recent call last):<br>   File “<stdin>“, line 1, in <module><br> TypeError: ‘tuple’ object does not support item assignment</p>
+<p>tup = (1, 2, 3, 4, 5, 6)<br>print(tup[0])<br> 1<br>print(tup[1:5])<br> (2, 3, 4, 5)<br>tup[0] = 11  # 修改元组元素的操作是非法的<br> Traceback (most recent call last):<br>   File “<stdin>“, line 1, in <module><br> TypeError: ‘tuple’ object does not support item assignment</p>
 </blockquote>
 </blockquote>
 </blockquote>
@@ -325,9 +305,9 @@ function activateLightMode(){
 <blockquote>
 <blockquote>
 <blockquote>
+<p>tup1 = ()     # 空元组<br>    tup2 = (20,)  # 一个元素，需要在元素后添加逗号</p>
 </blockquote>
-<pre><code>tup1 = ()     # 空元组
-tup2 = (20,)  # 一个元素，需要在元素后添加逗号</code></pre></blockquote>
+</blockquote>
 </blockquote>
 <p>string、list 和 tuple 都属于 sequence（序列）。</p>
 <p>注意：<br>  1、与字符串一样，元组的元素不能修改。</p>
@@ -342,15 +322,16 @@ tup2 = (20,)  # 一个元素，需要在元素后添加逗号</code></pre></bloc
 </blockquote>
 </blockquote>
 </blockquote>
+<p>实例：</p>
 <blockquote>
 <blockquote>
 <blockquote>
-<p>实例：<br>#!/usr/bin/python3<br>student = {‘Tom’, ‘Jim’, ‘Mary’, ‘Tom’, ‘Jack’, ‘Rose’}<br>print(student)   # 输出集合，重复的元素被自动去掉</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<p>#!/usr/bin/python3<br>student = {‘Tom’, ‘Jim’, ‘Mary’, ‘Tom’, ‘Jack’, ‘Rose’}<br>print(student)   # 输出集合，重复的元素被自动去掉</p>
 <h1 id="成员测试"><a href="#成员测试" class="headerlink" title="成员测试"></a>成员测试</h1><p>if ‘Rose’ in student :<br>    print(‘Rose 在集合中’)<br>else :<br>    print(‘Rose 不在集合中’)</p>
 <h1 id="set可以进行集合运算"><a href="#set可以进行集合运算" class="headerlink" title="set可以进行集合运算"></a>set可以进行集合运算</h1><p>a = set(‘abracadabra’)<br>b = set(‘alacazam’)<br>print(a)<br>print(a - b)     # a 和 b 的差集<br>print(a | b)     # a 和 b 的并集<br>print(a &amp; b)     # a 和 b 的交集<br>print(a ^ b)     # a 和 b 中不同时存在的元素</p>
+</blockquote>
+</blockquote>
+</blockquote>
 <p>以上实例输出结果：</p>
 <blockquote>
 <blockquote>
@@ -359,11 +340,11 @@ tup2 = (20,)  # 一个元素，需要在元素后添加逗号</code></pre></bloc
 <p>{‘Mary’, ‘Jim’, ‘Rose’, ‘Jack’, ‘Tom’}<br>Rose 在集合中<br>{‘b’, ‘a’, ‘c’, ‘r’, ‘d’}<br>{‘b’, ‘d’, ‘r’}<br>{‘l’, ‘r’, ‘a’, ‘c’, ‘z’, ‘m’, ‘b’, ‘d’}<br>{‘a’, ‘c’}<br>{‘l’, ‘r’, ‘z’, ‘m’, ‘b’, ‘d’}</p>
 </blockquote>
 </blockquote>
-<p>Dictionary（字典）<br>字典（dictionary）是Python中另一个非常有用的内置数据类型。<br>列表是有序的对象集合，字典是无序的对象集合。两者之间的区别在于：字典当中的元素是通过键来存取的，而不是通过偏移存取。<br>字典是一种映射类型，字典用 { } 标识，它是一个无序的 键(key) : 值(value) 的集合。<br>键(key)必须使用不可变类型。<br>在同一个字典中，键(key)必须是唯一的。</p>
+<p>Dictionary（字典）<br>字典（dictionary）是Python中另一个非常有用的内置数据类型。<br>列表是有序的对象集合，字典是无序的对象集合。两者之间的区别在于：字典当中的元素是通过键来存取的，而不是通过偏移存取。<br>字典是一种映射类型，字典用 { } 标识，它是一个无序的 键(key) : 值(value) 的集合。<br>键(key)必须使用不可变类型。<br>在同一个字典中，键(key)必须是唯一的。<br>实例：</p>
 <blockquote>
 <blockquote>
 <blockquote>
-<p>实例：<br>#!/usr/bin/python3<br>dict = {}<br>dict[‘one’] = “1 - 菜鸟教程”<br>dict[2]     = “2 - 菜鸟工具”<br>tinydict = {‘name’: ‘runoob’,’code’:1, ‘site’: ‘<a href="http://www.runoob.com&#39;}" target="_blank" rel="noopener">www.runoob.com&#39;}</a><br>print (dict[‘one’])       # 输出键为 ‘one’ 的值<br>print (dict[2])           # 输出键为 2 的值<br>print (tinydict)          # 输出完整的字典<br>print (tinydict.keys())   # 输出所有键<br>print (tinydict.values()) # 输出所有值</p>
+<p>#!/usr/bin/python3<br>dict = {}<br>dict[‘one’] = “1 - 菜鸟教程”<br>dict[2]     = “2 - 菜鸟工具”<br>tinydict = {‘name’: ‘runoob’,’code’:1, ‘site’: ‘<a href="http://www.runoob.com&#39;}" target="_blank" rel="noopener">www.runoob.com&#39;}</a><br>print (dict[‘one’])       # 输出键为 ‘one’ 的值<br>print (dict[2])           # 输出键为 2 的值<br>print (tinydict)          # 输出完整的字典<br>print (tinydict.keys())   # 输出所有键<br>print (tinydict.values()) # 输出所有值</p>
 </blockquote>
 </blockquote>
 </blockquote>
