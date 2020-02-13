@@ -81,6 +81,7 @@ function activateLightMode(){
 </blockquote>
 </blockquote>
 <p>level3:<br>依然用第一关脚本去测试一下，然后<br><img alt data-src="6.png" class="lazyload"><br>怎么少了一部分，应该也是做了实体转义，那就闭合在构造  ‘onclick=’alert(“xss”)<br>如果继续用<script>的话<>会被转义。<br><img src="7.png" alt=""></p>
+<a id="more"></a>
 <p>level4:<br>把上一关的结果输入进去<br><img src="8.png" alt=""><br>发现'原样输出，用  '"&<>  试一下，发现只有一个 ' 。而且payload不对，应该是有<br>过滤的。查看一下前端，发现是 <> 被过滤了。但上一关结果不行，那就用 " 闭合尝试一下。<br>构造payload  "onclick="alert(/xss/)<br><img src="9.png" alt=""></p>
 <p>level5:<br>依然用上一关的payload试一下，然后看前端<br><img src="10.png" alt=""><br>发现 o 后面多了个 _ ，在试试 <script> ，发现变成了 <scr_ipt>。<br>那就构造a标签再利用a标签的href属性执行JavaScript（伪协议），构造payload "><a href='javascript:alert(/xss/)' target="_blank" rel="noopener"> 。<br><img src="11.png" alt=""></p>
 <p>level6:<br>这关将上一关的payload中的 h 改成大写就行了。</p>
